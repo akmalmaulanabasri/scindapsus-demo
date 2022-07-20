@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Scindapsus</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./assets/css/gallery.css">
+
+    <!--Slick CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="./assets/vendor/slick/slick.css">
+    <link rel="stylesheet" href="./assets/vendor/slick/slick-theme.css">
+
+</head>
+
+<body>
+
+    <div class="main-content container">
+
+        <div class="row mt-4">
+            <div class="col-9">
+                <div class="wrapper-image-product">
+                    <div class="view-Images">
+                        <div class="images-product">
+                            <img src="./assets/img/Detail-Plant.png" alt="">
+                        </div>
+                        <div class="images-product">
+                            <img src="./assets/img/Detail-Plant.png" alt="">
+                        </div>
+                        <div class="images-product">
+                            <img src="./assets/img/Detail-Plant.png" alt="">
+                        </div>
+                        <div class="images-product">
+                            <img src="./assets/img/Detail-Plant.png" alt="">
+                        </div>
+                        <div class="images-product">
+                            <img src="./assets/img/Detail-Plant.png" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="nav-images d-flex">
+                    <div class="images-nav">
+                        <img src="./assets/img/Detail-Plant.png">
+                    </div>
+                    <div class="images-nav">
+                        <img src="./assets/img/Detail-Plant.png">
+                    </div>
+                    <div class="images-nav">
+                        <img src="./assets/img/Detail-Plant.png">
+                    </div>
+                    <div class="images-nav">
+                        <img src="./assets/img/Detail-Plant.png">
+                    </div>
+                    <div class="images-nav">
+                        <img src="./assets/img/Detail-Plant.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="text mt-3">
+            <div class="catagory">
+                <h5 style="color: #19C078; font-weight: 600;">Philodendron</h5>
+            </div>
+            <div class="name">
+                <h1 style="color: #0E0E0E; font-weight: 700;">Scindapsus Kepala Ular</h1>
+            </div>
+            <div class="d-flex">
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--Jquery-->
+    <script src="./assets/vendor/jquery/jquery.min.js"></script>
+    <!--Bootstrap-->
+    <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!--Slick Js-->
+    <script src="./assets/vendor/slick/slick.min.js"></script>
+    <script src="./assets/vendor/slick/slick.js"></script>
+
+    <!--Slick Images Product-->
+    <script>
+        $('.view-Images').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            fade: false,
+            adaptiveHeight: true,
+            infinite: false,
+            useTransform: true,
+            speed: 400,
+            asNavFor: '.nav-images',
+            cssEase: 'cubic-bezier(0.77, 0, 0.18, 1)',
+        });
+
+        $('.nav-images')
+            .on('init', function (event, slick) {
+                $('.nav-images .slick-slide.slick-current').addClass('is-active');
+            })
+            .slick({
+                slidesToShow: 5,
+                slidesToScroll: 5,
+                dots: false,
+                focusOnSelect: false,
+                infinite: false,
+                asNavFor: '.view-Images',
+            });
+
+        $('.view-Images').on('afterChange', function (event, slick, currentSlide) {
+            $('.nav-images').slick('slickGoTo', currentSlide);
+            var currrentNavSlideElem = '.nav-images .slick-slide[data-slick-index="' + currentSlide + '"]';
+            $('.nav-images .slick-slide.is-active').removeClass('is-active');
+            $(currrentNavSlideElem).addClass('is-active');
+        });
+
+        $('.nav-images').on('click', '.slick-slide', function (event) {
+            event.preventDefault();
+            var goToSingleSlide = $(this).data('slick-index');
+
+            $('.view-Images').slick('slickGoTo', goToSingleSlide);
+        });
+    </script>
+</body>
+
+</html>

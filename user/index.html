@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.7/swiper-bundle.css" />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="../assets/css/user.css">
+
+    <title>Scindapsus</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light px-5 py-0">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#" style="width: 60px;">
+                    <img src="../assets/img/user-page/logo-text.svg" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-bar"
+                    aria-controls="navbar-bar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse float-right" id="navbar-bar">
+                    <ul class="navbar-nav align-items-center ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                SubmitCultivar
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item border-b" href="#">Learn About Cultivars</a></li>
+                                <li><a class="dropdown-item border-b" href="#">Process to Register</a></li>
+                                <li><a class="dropdown-item" href="#">Terms And Conditions</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Community</a>
+                        </li>
+                        <!-- after login -->
+                        <li class="nav-item dropdown">
+                        <a class="nav-link profile dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="../assets/img/user-page/profile.png" alt="" srcset="" class="img-profile">
+                            Halo, Beatrice!
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <li><a class="dropdown-item border-b" href="#">Profile</a></li>
+                          <li><a class="dropdown-item border-b" href="#">My Cultivar</a></li>
+                          <li><a class="dropdown-item" href="#">Logout</a></li>
+                        </ul>
+                      </li>
+                        <!-- <li class="nav-item btn-nav">
+                            <div class="d-flex">
+                                <a class="btn btn-outline-success">Sign In</a>
+                                <a class="btn btn-green" style="margin-left: 10px;">Sign Up</a>
+                            </div>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="slider-hero">
+        <div id="carouselExampleFade" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner" data-bs-interval="6000">
+                <div class="carousel-item active">
+                    <div class="w-100">
+                        <div class="wrap-hero text-center text-white">
+                            <h1 style="font-weight: 700">Welcome to the Cultivar Registry for Indonesian Scindapsus!
+                            </h1>
+                            <p class="my-4" style="font-size: 20px">#theheartofindonesia</p>
+                            <a href="#" class="btn btn-success gradient ms-auto">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="6000">
+                    <div class="w-100">
+                        <div class="wrap-hero w-100 text-center text-white">
+                            <h1 style="font-weight: 700">Come join us for a better experience!</h1>
+                            <p class="my-4" style="font-size: 20px">#theheartofindonesia</p>
+                            <a href="#" class="btn btn-success gradient ms-auto">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+        </div>
+        <!-- <div class="wrap-hero text-center text-white">
+            <h1 style="font-weight: 700">Welcome to the Cultivar Registry for Indonesian Scindapsus!</h1>
+            <p class="my-4" style="font-size: 20px">#theheartofindonesia</p>
+            <a href="#" class="btn btn-success gradient ms-auto">Learn More</a>
+        </div> -->
+    </div>
+
+    <div class="container">
+        <div class="section-card">
+            <div class="d-flex flex-wrap justify-content-center">
+                <div class="card item" style="width: 18rem;">
+                    <img src="../assets/img/user-page/frame-1.svg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="card-title">You can search for existing cultivars</h3>
+                        <p class="card-text">Find the plant you are looking for</p>
+                        <a href="#" class="btn btn-success gradient">Start</a>
+                    </div>
+                </div>
+                <div class="card item" style="width: 18rem;">
+                    <img src="../assets/img/user-page/frame-2.svg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="card-title">What is a cultivar ?</h3>
+                        <p class="card-text">Read more about a cultivar</p>
+                        <a href="#" class="btn btn-success gradient">Start</a>
+                    </div>
+                </div>
+                <div class="card item" style="width: 18rem;">
+                    <img src="../assets/img/user-page/frame-3.svg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="card-title">How to register? </h3>
+                        <p class="card-text">Contains a guide to register Your Cultivar </p>
+                        <a href="#" class="btn btn-success gradient">Start</a>
+                    </div>
+                </div>
+                <div class="card item" style="width: 18rem;">
+                    <img src="../assets/img/user-page/frame-4.svg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="card-title">Scindapsus Community</h3>
+                        <p class="card-text">Come join us!</p>
+                        <a href="#" class="btn btn-success gradient">Start</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-regis">
+            <div class="circle"> </div>
+            <div class="regis-content">
+                <div class="textBox">
+                    <h2>Hey, Register Your Cultivar Now!</h2>
+                    <p>#theheartofindonesia</p>
+                    <a href="#">Register Now</a>
+                </div>
+                <div class="imgBox">
+                    <img src="../assets/img/user-page/regis-img.svg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-slide">
+        <h1 class="text-center text-white" style="font-weight: 700">Cultivar Gallery</h1>
+        <div class="swiper">
+            <div class="slide-content">
+                <div class="card-wrapper swiper-wrapper">
+                    <div class="card-slider swiper-slide">
+                        <img src="../assets/img/user-page/plant1.png">
+                        <div class="row" style="margin-top: 15px">
+                            <div class="col-9">
+                                <h5 style="font-weight: 600; font-size: 1rem;">Brasil form variegated</h5>
+                                <p class="text-secondary" style="font-size: 12px">Monstera</p>
+                            </div>
+                            <div class="col-3 d-flex flex-column align-items-center">
+                                <i class="fa-regular fa-heart text-danger" id="icon-love" style="font-size: 1.2rem; cursor: pointer;"></i>
+                                <h6 class="text-secondary">100</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-slider swiper-slide">
+                        <img src="../assets/img/user-page/plant1.png">
+                        <div class="row" style="margin-top: 15px">
+                            <div class="col-9">
+                                <h5 style="font-weight: 600; font-size: 1rem;">Brasil form variegated</h5>
+                                <p class="text-secondary" style="font-size: 12px">Monstera</p>
+                            </div>
+                            <div class="col-3 d-flex flex-column align-items-center">
+                                <i class="fa-regular fa-heart text-danger" id="icon-love" style="font-size: 1.2rem; cursor: pointer;"></i>
+                                <h6 class="text-secondary">100</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-slider swiper-slide">
+                        <img src="../assets/img/user-page/plant1.png">
+                        <div class="row" style="margin-top: 15px">
+                            <div class="col-9">
+                                <h5 style="font-weight: 600; font-size: 1rem;">Brasil form variegated</h5>
+                                <p class="text-secondary" style="font-size: 12px">Monstera</p>
+                            </div>
+                            <div class="col-3 d-flex flex-column align-items-center">
+                                <i class="fa-regular fa-heart text-danger" id="icon-love" style="font-size: 1.2rem; cursor: pointer;"></i>
+                                <h6 class="text-secondary">100</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-slider swiper-slide">
+                        <img src="../assets/img/user-page/plant1.png">
+                        <div class="row" style="margin-top: 15px">
+                            <div class="col-9">
+                                <h5 style="font-weight: 600; font-size: 1rem;">Brasil form variegated</h5>
+                                <p class="text-secondary" style="font-size: 12px">Monstera</p>
+                            </div>
+                            <div class="col-3 d-flex flex-column align-items-center">
+                                <i class="fa-regular fa-heart text-danger" id="icon-love" style="font-size: 1.2rem; cursor: pointer;"></i>
+                                <h6 class="text-secondary">100</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-slider swiper-slide">
+                        <img src="../assets/img/user-page/plant1.png">
+                        <div class="row" style="margin-top: 15px">
+                            <div class="col-9">
+                                <h5 style="font-weight: 600; font-size: 1rem;">Brasil form variegated</h5>
+                                <p class="text-secondary" style="font-size: 12px">Monstera</p>
+                            </div>
+                            <div class="col-3 d-flex flex-column align-items-center">
+                                <i class="fa-regular fa-heart text-danger" id="icon-love" style="font-size: 1.2rem; cursor: pointer;"></i>
+                                <h6 class="text-secondary">100</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-slider swiper-slide">
+                        <img src="../assets/img/user-page/plant1.png">
+                        <div class="row" style="margin-top: 15px">
+                            <div class="col-9">
+                                <h5 style="font-weight: 600; font-size: 1rem;">Brasil form variegated</h5>
+                                <p class="text-secondary" style="font-size: 12px">Monstera</p>
+                            </div>
+                            <div class="col-3 d-flex flex-column align-items-center">
+                                <i class="fa-regular fa-heart text-danger" id="icon-love" style="font-size: 1.2rem; cursor: pointer;"></i>
+                                <h6 class="text-secondary">100</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-slider swiper-slide">
+                        <img src="../assets/img/user-page/plant1.png">
+                        <div class="row" style="margin-top: 15px">
+                            <div class="col-9">
+                                <h5 style="font-weight: 600; font-size: 1rem;">Brasil form variegated</h5>
+                                <p class="text-secondary" style="font-size: 12px">Monstera</p>
+                            </div>
+                            <div class="col-3 d-flex flex-column align-items-center">
+                                <i class="fa-regular fa-heart text-danger" id="icon-love" style="font-size: 1.2rem; cursor: pointer;"></i>
+                                <h6 class="text-secondary">100</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next swiper-navBtn"></div>
+            <div class="swiper-button-prev swiper-navBtn"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="d-flex justify-content-center mt-5">
+            <a href="#" class="btn btn-white text-success"
+                style="border-radius: 50px; background: #fff; padding: 5px 35px;">See more <i
+                    class="fa-solid fa-arrow-right" style="margin-left: 5px"></i></a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="section-join">
+            <div class="row">
+                <div class="col-lg-6 p-lg-5">
+                    <h2 class="mb-3 f-700">Join Scindapsus Community</h2>
+                    <p class="mb-3">We are here for Indonesia. Come join us for a better experience!</p>
+                    <a href="#" class="btn btn-success gradient"><i class="fa-brands fa-whatsapp mr-3"></i> Join now on
+                        WhatsApp</a>
+                </div>
+                <div class="col-lg-6 mt-lg-0 mt-5">
+                    <div class="d-flex flex-wrap justify-content-center align-items-center">
+                        <img src="../assets/img/user-page/img1.jpg" class="img-join">
+                        <img src="../assets/img/user-page/img2.jpg" class="img-join">
+                        <img src="../assets/img/user-page/img3.jpg" class="img-join">
+                        <img src="../assets/img/user-page/img4.jpg" class="img-join">
+                        <img src="../assets/img/user-page/img5.jpg" class="img-join">
+                        <img src="../assets/img/user-page/img6.jpg" class="img-join">
+                        <img src="../assets/img/user-page/img7.jpg" class="img-join">
+                        <img src="../assets/img/user-page/img8.jpg" class="img-join">
+                        <img src="../assets/img/user-page/img9.jpg" class="img-join">
+                        <img src="../assets/img/user-page/img10.png" class="img-join">
+                        <img src="../assets/img/user-page/img11.png" class="img-join">
+                        <img src="../assets/img/user-page/img12.jpg" class="img-join">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="footer-content py-3">
+                <a href="#"><img src="../assets/img/user-page/logo-white.svg" alt=""></a>
+                <ul class="d-flex align-items-center ms-auto" style="list-style-type: none;">
+                    <li class="li-r"><a href="#" class="text-white text-decoration-none">Home</a></li>
+                    <li class="li-r"><a href="#" class="text-white text-decoration-none">About</a></li>
+                    <li class="li-r"><a href="#" class="text-white text-decoration-none">Gallery</a></li>
+                    <li class="li-r"><a href="#" class="text-white text-decoration-none">Regist Cultivar</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <hr style="height: 2px; margin-top: 0 !important;">
+            </hr>
+            <div class="d-flex justify-content-between align-items-center">
+                <p class="copyright">&copy; Copyright 2022, Scindapsus Indonesia</p>
+                <ul class="d-flex align-items-center ms-auto" style="list-style-type: none;">
+                    <li class="li-r"><a href="#" class="text-white text-decoration-none"><i class="fa-brands fa-instagram" style="font-size: 18px;"></i></a></li>
+                    <li class="li-r"><a href="#" class="text-white text-decoration-none"><i class="fa-brands fa-whatsapp" style="font-size: 18px;"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- Swiper JS -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.7/swiper-bundle.min.js"></script>
+    <script type="text/javascript">
+
+        var swiper = new Swiper(".slide-content", {
+            slidesPerView: 3,
+            slidesPerColumn: 2,
+            loop: false,
+            spaceBetween: 30,
+            centerSlide: 'true',
+            fade: 'true',
+            grabCursor: 'true',
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                dynamicBullets: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                },
+                520: {
+                    slidesPerView: 2,
+                },
+                950: {
+                    slidesPerView: 3,
+                },
+            },
+        });
+
+    </script>
+
+    <script>
+        var iconLove = document.getElementById('icon-love');
+
+        iconLove.onclick = function () {
+            if (iconLove.classList.contains('fa-regular')) {
+                iconLove.classList.remove('fa-regular');
+                iconLove.classList.add('fa-solid');
+            } else {
+                iconLove.classList.remove('fa-solid');
+                iconLove.classList.add('fa-regular');
+            }
+        }
+    </script>
+</body>
+
+</html>

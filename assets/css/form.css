@@ -1,0 +1,193 @@
+/* Costom */
+.btn-success {
+    background: linear-gradient(270deg, #19C078 0%, #4FDF85 77.91%);
+    border: 0;
+    border-radius: 20rem;
+    padding: .6rem 2rem;
+}
+
+@media (max-width: 450px) {
+    .btn-success {
+        padding: .5rem 1.5rem;
+    }
+
+    .btn-success svg {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media (max-width: 330px) {
+    .btn-success {
+        padding: .5rem 1.5rem;
+        font-size: 14px;
+    }
+
+    .btn-success svg {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+
+.label-input {
+    background: linear-gradient(270deg, #19C078 0%, #4FDF85 77.91%);
+    border-radius: 20rem;
+    color: white;
+    padding: .6rem 2rem;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+/* End Costom */
+
+/* Banner */
+
+.header {
+    height: 60vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25),
+            rgba(0, 0, 0, 0.25)),
+        url('../img/Bg-form.png');
+    background-size: cover;
+    background-position: top;
+    position: relative;
+}
+
+.page-heading {
+    position: absolute;
+    top: 45%;
+    left: 32%;
+    transform: translate(-50%, -50%);
+    color: #FFFFFF;
+    white-space: nowrap;
+}
+
+.page-heading-primary {
+    display: block;
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: .8rem;
+}
+
+.page-heading-secondary {
+    display: block;
+    font-size: 22px;
+    font-weight: 300;
+}
+
+@media (max-width: 1200px) {
+    .header {
+        height: 50vh;
+    }
+
+    .page-heading {
+        left: 33%;
+    }
+
+    .page-heading-primary {
+        font-size: 50px;
+    }
+
+    .page-heading-secondary {
+        display: block;
+        font-size: 17px;
+        font-weight: 300;
+    }
+}
+
+@media (max-width: 991px) {
+    .header {
+        height: 45vh;
+    }
+
+    .page-heading {
+        left: 35%;
+    }
+
+    .page-heading-primary {
+        font-size: 40px;
+    }
+
+    .page-heading-secondary {
+        display: block;
+        font-size: 14px;
+        font-weight: 300;
+    }
+}
+
+@media (max-width: 767px) {
+    .header {
+        height: 40vh;
+    }
+
+    .page-heading {
+        left: 50%;
+        text-align: center;
+    }
+
+    .page-heading-primary {
+        font-size: 38px;
+    }
+
+    .page-heading-secondary {
+        display: block;
+        font-size: 14px;
+        font-weight: 400;
+    }
+}
+
+@media (max-width: 576px) {
+    .header {
+        height: 35vh;
+    }
+
+    .page-heading {
+        left: 50%;
+        text-align: center;
+    }
+
+    .page-heading-primary {
+        font-size: 38px;
+    }
+
+    .page-heading-secondary {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 450px) {
+    .header {
+        height: 30vh;
+    }
+
+    .page-heading {
+        left: 50%;
+        text-align: center;
+    }
+
+    .page-heading-primary {
+        font-size: 24px;
+    }
+
+    .page-heading-secondary {
+        font-size: 9.5px;
+    }
+}
+
+@media (max-width: 350px) {
+    .page-heading {
+        left: 50%;
+        text-align: center;
+    }
+
+    .page-heading-primary {
+        font-size: 26px;
+        margin-bottom: .3rem;
+    }
+
+    .page-heading-secondary {
+        font-size: 8px;
+    }
+}
+
+/* End Banner */
