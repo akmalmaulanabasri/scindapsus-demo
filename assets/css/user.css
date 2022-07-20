@@ -543,6 +543,11 @@ p.copyright {
     flex-direction: column;
 }
 
+.cultivar-head{
+    display: flex;
+    justify-content: space-between;
+}
+
 .cultivar-data{
     padding: 0;
 }
@@ -680,6 +685,12 @@ p.copyright {
         margin-left: auto;
         margin-right: auto;
         margin-top: 50px;
+    }
+
+    .cultivar-head{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
     }
     
 }
